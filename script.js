@@ -50,6 +50,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 
 
 document.querySelector('.btn-hold').addEventListener('click',function(){
+   if(gamePlaying){
     // store the score
     scores[activePlayer] += roundScore;
       // update the global score
@@ -65,6 +66,7 @@ document.querySelector('.btn-hold').addEventListener('click',function(){
      else{
       nextPlayer();
   }
+   }
 });
 
 document.querySelector
